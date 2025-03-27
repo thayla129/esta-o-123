@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Railway Stations</title>
+    <link rel="stylesheet" href="../src/css/listaEstacoes.css">
+</head>
+<body>
+
+    <h1>Railway Stations Info</h1>
+
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Pesquisar...">
+        <button onclick="fetchStations()">Pesquisar</button>
+    </div>
+    
+    <button id="listStationsButton" onclick="fetchStations()">Estações ferroviárias por país</button>
+    <button onclick="fetchPhotos('Hamburg Dammtor')">Todas as fotos de uma Estação ferroviária</button>
+    <button onclick="fetchStats()">Mostrar Estatísticas</button>
+
+    <h2>Estações</h2>
+    <div id="stations"></div>
+
+    <h2>Fotos</h2>
+    <div id="photos"></div>
+
+    <h2>Estatísticas</h2>
+    <div id="stats"></div>
+
+    <script src="../src/js/listaEstacoes.js"></script>
+
+</body>
+</html>
